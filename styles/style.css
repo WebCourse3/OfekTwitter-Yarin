@@ -1,0 +1,20 @@
+img.avatar {
+    width: 60px;
+    height: 60px;
+}
+
+label {
+    display: block;
+}
+
+nav {
+    background-color: blue;
+    color: white;
+}
+nav a {
+    color: white;
+}
+
+.navbar-static-top {
+    padding-right: 1em;
+}
