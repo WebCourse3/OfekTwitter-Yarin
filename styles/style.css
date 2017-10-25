@@ -22,3 +22,10 @@ nav a {
 .tweet {
     margin: 1em;
 }
+
+.user {
+    padding: 1em;
+}
+.user ul {
+    list-style: none;
+}
