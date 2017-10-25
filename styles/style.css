@@ -7,10 +7,6 @@ label {
     display: block;
 }
 
-.navbar {
-    padding-right: 1em;
-}
-
 .tweet {
     margin: 1em;
 }
@@ -18,6 +14,19 @@ label {
 .user {
     padding: 1em;
 }
+
 .user ul {
     list-style: none;
 }
+
+.tweet-box {
+    margin: 1em;
+}
+
+.tweets-section {
+    margin-top: 2em;
+}
+
+textarea {
+    resize: none;
+ }
