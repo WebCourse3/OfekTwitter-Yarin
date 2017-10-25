@@ -27,6 +27,14 @@ label {
     margin-top: 2em;
 }
 
+.filter-users {
+    margin-bottom: 2em;
+}
+
 textarea {
     resize: none;
+ }
+
+ .follow-btn {
+     display: inline;
  }
