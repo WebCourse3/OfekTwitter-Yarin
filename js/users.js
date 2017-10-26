@@ -1,5 +1,5 @@
 window.onload = function() {
-    loadUsers(users);
+    loadUsers(filteredUsers);
     loadFollowing()
 };
 
@@ -26,6 +26,8 @@ const users = [
     },
 ];
 
+let filteredUsers = users;
+
 let following = [];
 
 function toggleFollow(username) {
@@ -36,11 +38,11 @@ function toggleFollow(username) {
     }
 
     loadFollowing();
-    loadUsers(users);
+    loadUsers(filteredUsers);
 }
 
 function filterUsers(keyword) {
-    const filteredUsers = users.filter( u => u.username.toLowerCase().includes(keyword.toLowerCase()) );
+    filteredUsers = users.filter( u => u.username.toLowerCase().includes(keyword.toLowerCase()) );
     loadUsers(filteredUsers);
 }
 
