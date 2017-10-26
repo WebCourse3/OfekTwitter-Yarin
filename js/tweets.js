@@ -35,31 +35,31 @@ function loadTweets() {
 }
 
 function createTweetElement(username, text) {
-    let element = document.createElement('div');
+    let element = document.createElement('blockquote');
     element.setAttribute('class', 'tweet');
 
     // Avatar
-    let avatarDiv = document.createElement('div');
-    avatarDiv.setAttribute('class', 'tweeter-avatar');
+    let avatarElement = document.createElement('div');
+    avatarElement.setAttribute('class', 'tweeter-avatar');
     let img = document.createElement('img');
     img.setAttribute('src', 'images/avatar.jpg');
     img.setAttribute('alt', 'avatar');
     img.setAttribute('class', 'avatar');
-    avatarDiv.appendChild(img);
-
-    // Username
-    let usernameDiv = document.createElement('div');
-    usernameDiv.setAttribute('class', 'tweeter-username');
-    usernameDiv.innerText = username;
+    avatarElement.appendChild(img);
 
     // Tweet Text
-    let textDiv = document.createElement('div');
-    textDiv.setAttribute('class', 'tweet-text');
-    textDiv.innerText = text;
+    let textElement = document.createElement('p');
+    textElement.setAttribute('class', 'tweet-text');
+    textElement.innerText = text;
 
-    element.appendChild(avatarDiv);
-    element.appendChild(usernameDiv);
-    element.appendChild(textDiv);
+    // Username
+    let usernameElement = document.createElement('footer');
+    usernameElement.setAttribute('class', 'tweeter-username');
+    usernameElement.innerText = username;
+
+    element.appendChild(avatarElement);
+    element.appendChild(textElement);
+    element.appendChild(usernameElement);
 
     return element;
 }
