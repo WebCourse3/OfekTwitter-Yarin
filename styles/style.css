@@ -29,9 +29,9 @@ label {
 
 textarea {
     resize: none;
- }
+}
 
- .tweet > .tweeter-avatar {
+.tweet > .tweeter-avatar {
      float: left;
      margin-right: 1em;
- }
+}
