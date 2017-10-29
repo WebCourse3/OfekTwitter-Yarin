@@ -30,3 +30,8 @@ label {
 textarea {
     resize: none;
  }
+
+ .tweet > .tweeter-avatar {
+     float: left;
+     margin-right: 1em;
+ }

@@ -9,6 +9,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="js/tweets.js"></script>
 </head>
 
 <body>
@@ -39,12 +40,20 @@
                         <label for="tweet-input">Whats Up?</label>
                         <textarea class="form-control" rows="5" id="tweet-input" placeholder="Tell us what's on your mind!"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">Tweet!</button>
+                    <button type="button" class="btn btn-primary btn-block" onclick="publishTweet('USERNAME', document.getElementById('tweet-input').value)">Tweet!</button>
                 </div>
             </div>
         </section>
 
-        <section class="tweets-section">
+        <section id="tweets-section">
+            <blockquote class="tweet">
+                <div class="tweeter-avatar">
+                    <img src="images/avatar.jpg" alt="avatar" class="avatar">
+                </div>
+                <p class="tweet-text">This is what yarin saidsss ssssssss ssssssssssss ssssssssss sssssssssss ssssss.</p>
+                <footer class="tweeter-username">Yarin</footer>
+            </blockquote>
+            <!-- Hard-coded tweets are currently irrelevant, and kept for historical reference only -->
             <div class="tweet">
                 <div class="tweeter-avatar">
                     <img src="images/avatar.jpg" alt="avatar" class="avatar">
