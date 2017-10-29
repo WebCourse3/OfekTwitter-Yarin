@@ -24,11 +24,11 @@ function clearTweetInput() {
 
 function loadTweets() {
     let tweetsSection = document.getElementById('tweets-section');
-    tweetsSection.innerHTML = ''; // Clear all tweets
+    tweetsSection.innerHTML = '';
 
-    for (let i=0; i < tweets.length; i++) {
-        const element = createTweetElement(tweets[i].username,
-                                           tweets[i].text);
+    for (const tweet of tweets) {
+        const element = createTweetElement(tweet.username,
+                                           tweet.text);
         
         tweetsSection.appendChild(element);
     }

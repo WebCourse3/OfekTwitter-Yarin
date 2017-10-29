@@ -48,7 +48,7 @@ function filterUsers(keyword) {
 
 function loadUsers(users) {
     let usersSection = document.getElementById('users-section');
-    usersSection.innerText = ''; // Clear all users
+    usersSection.innerText = '';
 
     for (const user of users) {
         usersSection.appendChild(createUserElement(user));
@@ -57,7 +57,7 @@ function loadUsers(users) {
 
 function loadFollowing() {
     let followingSection = document.getElementById('following-section');
-    followingSection.innerText = ''; // Clear all following
+    followingSection.innerText = '';
 
     for (const user of users) {
         if (following.indexOf(user.username) !== -1) {
