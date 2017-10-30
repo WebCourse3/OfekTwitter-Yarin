@@ -1,0 +1,23 @@
+.failed {
+    background-color: #cc0000;
+}
+
+.passed {
+    background-color: #4BB543;
+}
+
+.test-group {
+    padding: 0.8em;
+    margin: 1em;
+    border: 1px dashed black;
+}
+
+.test-group > h3 {
+    color: white;
+    margin-top: 0.1em;
+}
+
+.test {
+    border: 1px solid;
+    margin: 0.2em;
+}
