@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sample DOM</title>
+</head>
+<body>
+    <div class="a">
+        <div class="c" id="1"></div>
+    </div>
+    <div class="a">
+        <div class="b"></div>
+        <div class="c" id="not">
+            <div class="b">
+                <div class="c" id="2"></div>
+            </div>
+        </div>
+    </div>
+    <div class="a">
+        <div class="b">
+            <div class="c" id="3"></div>
+            <div class="c" id="4">
+                <div class="b"></div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="3">
+            <div id="shit">
+                <h1 class="moshe">Shalom</h1>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="js/ofek-query-test.js"></script>
+</body>
+</html>
